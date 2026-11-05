@@ -1,0 +1,6 @@
+$ curl -sS https://api.github.com/repos/zzhassyn/expressBookReviews | python -c 'import json,sys; r=json.load(sys.stdin); print(json.dumps({"html_url":r["html_url"],"fork":r["fork"],"parent":r["parent"]["full_name"]},indent=2))'
+{
+  "html_url": "https://github.com/zzhassyn/expressBookReviews",
+  "fork": true,
+  "parent": "ibm-developer-skills-network/expressBookReviews"
+}
