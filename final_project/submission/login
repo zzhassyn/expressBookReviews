@@ -1,0 +1,4 @@
+Demo password is redacted; the server response below is the actual captured output.
+$ curl -sS -c cookies.txt -X POST http://localhost:5000/customer/login -H 'Content-Type: application/json' -d '{"username":"demo_reader","password":"${DEMO_PASSWORD}"}'
+{"message":"Successfully logged in.","username":"demo_reader"}
+
